@@ -1,0 +1,32 @@
+keywords_fin	keywords_eng	category_eng
+maatalous;	agriculture;	Agriculture
+karjanhoito;	livestock husbandry;	Agriculture
+viljely; maatalous;	cultivation; agriculture;	Agriculture
+rehut; maatalous;	feed; agriculture;	Agriculture
+karjanhoito; maatalous;	livestock husbandry; agriculture;	Agriculture
+viljely;	cultivation;	Agriculture
+karjanhoito; kolhoosit;	livestock husbandry; collective farms;	Agriculture
+laitumet; maatalous;	pastures; agriculture;	Agriculture
+hevosenhoito;	horse husbandry;	Agriculture
+lapset; terveys;	children; health;	Education
+kasvatus; lapset;	childrearing; children;	Education
+didaktiikka; kotitalous; vapaa-ajantoiminnat;	didactics; household; leisure activities;	Education
+opetusohjelmat; matematiikka;	curricula; mathematics;	Education
+aapiset; äidinkieli; oppikirjat;	primers; mother tongue; textbooks;	Education
+matematiikka; oppikirjat;	mathematics; textbooks;	Education
+uskonto;	religion;	Education
+tähtitiede;	astronomy;	Education
+biologia;	biology;	Education
+tupakointi; terveys;	smoking; health;	Forestry
+metsät;	forests;	Forestry
+metsäpalot; metsätalous;	forest fires; forestry;	Forestry
+terveys;	health;	Health
+taudit;	diseases;	Health
+raittius; terveys;	sobriety; health;	Health
+politiikka; talous;	politics; economy;	Politics
+sosiaalipolitiikka; lainsäädäntö;	social policy; legislation;	Politics
+tekniikka;	technology;	Technology
+paperinvalmistus; tekniikka;	paper manufacturinf; technology;	Technology
+tekniikka; traktorit; maatalous;	technology; tractors; agriculture;	Technology
+radiotekniikka;	radio technology;	Technology
+tekniikka; maatalous;	technology; agriculture;	Technology

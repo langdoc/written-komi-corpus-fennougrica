@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Комсомол да кооперация</title>
+
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-sm-12 col-md-8 col-lg-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Fenno-Ugrica Corpus</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Agriculture
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_87417.html">Кӧрым ԍілосујтӧмын отсӧг</a>
+    </li>
+    <li>
+      <a href="10024_67927.html">Скӧт віԇан ӧтувја карта</a>
+    </li>
+    <li>
+      <a href="10024_87595.html">Скӧт кӧрым пуктасјас вӧԃітӧм</a>
+    </li>
+    <li>
+      <a href="10024_87426.html">Кӧрымјас ԍілосујтӧм</a>
+    </li>
+    <li>
+      <a href="10024_87447.html">Мерајтӧмӧн пемӧсјаслыԍ ԍӧкта тӧԁмалӧм</a>
+    </li>
+    <li>
+      <a href="10024_87358.html">Картупеԉ вӧԃітӧм-јылыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87326.html">Мыј колӧ тӧԁны ӧслыԍтыԍлы</a>
+    </li>
+    <li>
+      <a href="10024_67317.html">Кыԅі креԍԏаналы кыпӧԁны овмӧс</a>
+    </li>
+    <li>
+      <a href="10024_87316.html">Кыԇі поԅӧ бурмӧԁны татчӧс скӧт</a>
+    </li>
+    <li>
+      <a href="10024_87322.html">Креԍԏана-овмӧс бурмӧԁӧм-јылыԍ : картупеԉ пуктӧм : аԋкыщ кӧԇӧм : шабԁі кӧԇӧм</a>
+    </li>
+    <li>
+      <a href="10024_87418.html">Колхозјасын скӧтӧс ԁӧԅӧрітӧм</a>
+    </li>
+    <li>
+      <a href="10024_87408.html">Кроԉік віԇыԍјаслы інԁӧԁјас</a>
+    </li>
+    <li>
+      <a href="10024_87346.html">Скӧт-ԁӧԅӧрітӧм-јылыԍ</a>
+    </li>
+    <li>
+      <a href="10024_67316.html">Бурмӧԁӧј віԅјастӧ</a>
+    </li>
+    <li>
+      <a href="10024_87438.html">Бобӧԋаԋ</a>
+    </li>
+    <li>
+      <a href="10024_67312.html">Кӧјԁысјас-јылыԍ ԁа кӧԅӧм-јылыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87342.html">Кыԇі керны ԁа бӧрјыны картупеԉ</a>
+    </li>
+    <li>
+      <a href="10024_67321.html">Мувыв тӧԁмалӧм : меԁ-воԇԇа ԋіга</a>
+    </li>
+    <li>
+      <a href="10024_67335.html">Мујас бура уҗалӧм ԁа вынԍӧԁӧм јылыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87360.html">Кыԇі віԇны картупеԉ сіԍмӧмыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87354.html">Мыј колӧ тӧԁны пуктас вӧԃітыԍлы</a>
+    </li>
+    <li>
+      <a href="10024_67345.html">Турун : заготовітӧм, прессујтӧм, краԋітӧм, нуӧм : колхозјаслы, совхозјаслы ԁа заготовіԏеԉјаслы пракԏіческӧј руковоԁство</a>
+    </li>
+    <li>
+      <a href="10024_87401.html">Уҗалан вӧлӧс ԁӧԅӧрітӧм</a>
+    </li>
+    <li>
+      <a href="10024_87420.html">Војвыв віԇјас ԁа пӧскӧԏіна бурмӧԁӧм</a>
+    </li>
+    <li>
+      <a href="10024_87404.html">Курӧг пӧжӧм ԁа піјансӧ ԁӧԅӧрітӧм</a>
+    </li>
+    <li>
+      <a href="10024_87597.html">Кыԇі ԁа мыј ԍілосујтны колхозјаслы</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Education
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_87318.html">Кыԇі віԇны кагаӧс 3 арӧсԍан - 8-ӧԇ</a>
+    </li>
+    <li>
+      <a href="10024_87437.html">Бур ԍојанӧн кагатӧ верԁ</a>
+    </li>
+    <li>
+      <a href="10024_87443.html">Ӏчӧт школајасын ԁа ФЗС-са меԁвоԇԇа концентрын маԏемаԏіка велӧԁан программа : проект</a>
+    </li>
+    <li>
+      <a href="10024_87329.html">Віԇӧј кагалыԍ бур-ун!</a>
+    </li>
+    <li>
+      <a href="10024_67379.html">Шонԁі, му, тӧлыԍ ԁа коԇувјас</a>
+    </li>
+    <li>
+      <a href="10024_87436.html">Мыј вылын му сулалӧ</a>
+    </li>
+    <li>
+      <a href="10024_87390.html">Арталӧм : лыԁпас 1 воԍа велӧԁчыјаслы</a>
+    </li>
+    <li>
+      <a href="10024_67968.html">Быԁтыԍыԍ мамјаслы</a>
+    </li>
+    <li>
+      <a href="10024_87355.html">Кыԇі лоі морт</a>
+    </li>
+    <li>
+      <a href="10024_67297.html">Нывбабаӧс оласног : бурмӧԁны велӧԁан уҗԍер</a>
+    </li>
+    <li>
+      <a href="10024_67324.html">Важ ԁа выԉ праԅԋікјас</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Forestry
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_67339.html">Віԅӧј вӧр сотчӧмыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87441.html">Мыј колӧ тӧԁны вӧр-јылыԍ</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Health
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_67937.html">Сӧстӧм олӧм - ԇоԋвіԇа олӧм</a>
+    </li>
+    <li>
+      <a href="10024_67308.html">Ревмаԏізм</a>
+    </li>
+    <li>
+      <a href="10024_67307.html">Віна јуӧм-јылыԍ</a>
+    </li>
+    <li>
+      <a href="10024_67290.html">Віdчыԍӧj dа бурdӧdчӧj ԉоквіԍӧмыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87323.html">Табак курітӧм јылыԍ</a>
+    </li>
+    <li>
+      <a href="10024_67326.html">Скӧтԍаԋ мортлы вуҗыԍ-виԍӧмјас</a>
+    </li>
+    <li>
+      <a href="10024_67354.html">Гут : разӧԁӧ віԍӧмјас</a>
+    </li>
+    <li>
+      <a href="10024_67305.html">Ен ескӧј ԋінӧмабуӧ</a>
+    </li>
+    <li>
+      <a href="10024_67315.html">Куш-ԍінмӧн-аԁԅытӧм-ловјаловјас</a>
+    </li>
+    <li>
+      <a href="10024_67340.html">Віјам віна-гагјӧс : віна јуӧмкӧԁ вермаԍны отсӧгтор</a>
+    </li>
+    <li>
+      <a href="10024_87331.html">Луԁӧм</a>
+    </li>
+    <li>
+      <a href="10024_67355.html">Нывбаба віԍӧмјас-јылыс</a>
+    </li>
+    <li>
+      <a href="10024_87321.html">Віԁчіԍ ԉоквіԍӧмыԍ</a>
+    </li>
+    <li>
+      <a href="10024_87440.html">Чакотка</a>
+    </li>
+    <li>
+      <a href="10024_67982.html">Лоам мі јонӧԍ, ԇон-віԇаӧԍ-ԁа : мӧԁ ԋіга</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Politics
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_67969.html">Готраԍӧм, ԍемја ԁа опека</a>
+    </li>
+    <li>
+      <a href="10024_67954.html">Комсомол ԁа кооператcіja</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Prose
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_67980.html">Нёль боевӧй случай</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Technology
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="10024_87472.html">Машіна ԏехԋіка паԍкалӧм</a>
+    </li>
+    <li>
+      <a href="10024_67947.html">Кущӧм бур ԍетӧ трактор</a>
+    </li>
+    <li>
+      <a href="10024_67350.html">Кыԇі артмӧ бумага</a>
+    </li>
+    <li>
+      <a href="10024_67289.html">Ԃіріжабԉ овмӧс кыпӧdан уҗ вылын</a>
+    </li>
+    <li>
+      <a href="10024_87434.html">Урожај іԁралан машінајас</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Комсомол да кооперация</h1>
+
+</div>
+
+
+<div id="комсомол-да-кооперация" class="section level2">
+<h2>КОМСОМОЛ ДА КООПЕРАЦИЯ</h2>
+<div id="кооперация-социализмӧ-туй" class="section level3">
+<h3>Кооперация — социализмӧ туй</h3>
+<p>Быд комсомолечлы колӧ тӧдны кутшӧм вылӧ, ыджыд уджӧ, пуктыліс Ленин кооперация. Крестьяналы пӧ медкокньыд, матыс туй социализмӧ воны — кооперация, шуліс Ленин.</p>
+<p>Унджык олысьыс Сӧвет Союзын — крестьяна, найӧ олӧны торъя, дзоля овмӧсӧн. Овмӧсныс налӧн гӧлиник да омӧлик.</p>
+<p>Ассьыныс овмӧс найӧ вермасны кыпӧдны, бурмӧдны, озырмӧдны сӧмын кооператив пыр. Кооператив пыр крестьяна вермасны ас овмӧсыслы ньӧбны быдсяма тӧвар государстволысь донтӧмджык да бурджык купеч лавкаын дорысь: кӧйдыстӧ, видз-му уджалан машинатӧ; быдтор позьӧ ньӧбны уджӧн. Кооперативыд абу частнӧй купеч. Сэн став шленыс, пайщикыс — кӧзяин. Мый лишалӧ, кутшӧм воас барыш, кооператив видзӧ крестьяна овмӧс кыпӧдӧм вылӧ. Кымын уна гижсясны, пырасны кооперативӧ пайщикӧн, сымын уна да донтӧм тӧвар лоӧ. Крестьяналы бурджык ньӧбавны да вузасьны кооператив пыр, кооператив донтӧ оз чирк купеч моз.</p>
+<p>Ветлысь-мунысь ньӧбасьысьясыд крестьянаыдлы джын дон мынтӧны, асьныс карӧ кык-куим донӧн вузалӧны да нажӧвитчӧны, тыртӧны ассьыныс мошнянысӧ. Кооперативыд карын тӧвартӧ вузалӧ тыр донысь, мый лишнӧй босьтас, вайӧ сиктӧ, сетӧ крестьянаыдлы жӧ. Крестьяна ӧтувтчӧмӧн вермасны стрӧитны вый-рысь-кучик вӧчан заводъяс, заводъясыс ваясны налы ыджыд докод.</p>
+<p>Татшӧм ӧтувтчӧмӧн сиктын крестьяна вермасны ассьыс овмӧссӧ ёна вынсьӧдны, паськӧдны, озырмӧдны.</p>
+<p>Кооператив пыр вузасиг-ньӧбасигӧн крестьяна вӧчӧны, вынсьӧдӧны йӧз кост овмӧсъяс, топыда, чорыда кӧртасьӧны карса пабрик-заводса овмӧскӧд, некутшӧм купеч ни спекулянт ни на костын оз ло.</p>
+<p>Тайӧ кӧртасьӧмыс карса пабрик-заводса овмӧскӧд миянӧс ваяс выль туй вылӧ: ӧтув уджалӧмӧн, мортӧс мортӧн дзескӧдтӧм олӧм артмас, — кооператив пыр. Сэтшӧм олас ногсӧ шуӧны социализмӧн. Сы понда Лениныд коммунист партиякӧд ёна тӧждысис кооперация пондаыд, сійӧ вӧлі тӧдӧ, кутшӧм ыджыд уджъяс сулалӧны кооперация водзад.</p>
+</div>
+<div id="кооперация-комсомолечлы-велӧдчанін" class="section level3">
+<h3>Кооперация — комсомолечлы велӧдчанін</h3>
+<p>Комсомолечыд кӧ оз уджав кооперативад, омӧль нин комсомолеч сійӧ. Кооперативын уджалігӧн комсомолеч вӧчӧ Ленинлысь тшӧктӧмсӧ, нуӧдӧ водзӧ сылысь пуктӧм, лӧсьӧдӧм уджсӧ, матысмӧдӧ, лӧсьӧдӧ кооператив пыр выль оласног — социализм. Кооперативын уджалігӧн комсомолеч велӧдчӧ уджавны, уджалігмоз тӧдмалӧ, кыдз бурмӧдны йӧзлысь овмӧс: кыдз ӧтувтны крестьянаӧс, кыдз лӧсьӧдны йӧрмӧм кежлӧ крестьяналы удждысянін, кыдз бура нуны вузасян-ньӧбасян удж, кыдзи, кытчӧ вузавны крестьянаыслысь тӧвар: нянь, вый, кольк, вурун и с. в.</p>
+<p>Кыдз йитны овмӧснаныс кар да сикт.</p>
+<p>Ставсӧ тайӧ колӧ тӧдны быд прамӧй, тӧлка, уджлив комсомолечлы.</p>
+</div>
+<div id="сиктса-комсомолечлӧн-кооперативса-удж" class="section level3">
+<h3>Сиктса комсомолечлӧн кооперативса удж</h3>
+<p>Сиктса крестьяналы кооперативса уджыд выль удж. Оз сійӧ другӧн аслас пемыдлун пондаыс казяв сылысь бурлунсӧ. Кывйӧн висьталан, кооперативлысь бурлунсӧ, сійӧ оз эскы. Сылы колӧ петкӧдлыны уджӧн, медым сійӧ ас синнас аддзӧ кооперативлысь бурсӧ, сэк сійӧ сӧмын ачыс босьтчас сійӧ уджӧ, сэк сійӧ ачыс кутас тшӧтш корны уджавны мукӧд крестьянаӧс.</p>
+<p>Комсомолечьяс сиктын медся водзмӧстчысь сюсь крестьянаяс. Налы колӧ петкӧдлыны ас уджӧн, ас олӧмӧн бурлунсӧ выль нога олӧмыслысь, кооперативыслысь, став пемыд, вежӧртӧм крестьянаыслы.</p>
+<p>Ӧти сиктын уна долисны, сёрнитісны кооператив йылысь, крестьяна эз эскыны сійӧ выль уджӧ, некыдз вӧлі оз кӧсйыны гижсьыны, сетны пай. Сэк кымынкӧ комсомолеч шуисны вӧчны кооператив, петкӧдлыны пӧрысь йӧзлы ас уджӧн. Сьӧм налӧн эз вӧв. Пуктісны тулысын артельӧн картупель, керисны арын кымынкӧ мешӧк, вузалісны. Картупельысь босьтӧм сьӧм вылӧ ньӧбисны сиктлы колан тӧвар: сов, истӧг, карасин да восьтісны кооператив. Крестьяна эз зэв бура видзӧдны тайӧ ичӧтик лавка вылӧ, мӧвпалӧны — нинӧм пӧ оз артмы, оз вӧлі налы эскыны (веритны). Бӧрыннас казялісны, кӧть тӧварыс вӧлі налӧн этша, а донтӧмджык мукӧд лавкаын дорысь. Кутісны пыравны комсомольскӧй кооперативӧ ньӧбасьны, регыдӧн тӧвар быри. Комсомолечьяс выль тӧварла мунісны. Выльысь вайигӧн налӧн лои выль пӧлӧс тӧваръяс: кӧрт тув тасьті-пань, гез, табак. Сідзинад найӧ лунысь лунӧ лавкатӧ паськӧдісны да бурджыка кутісны тӧргуйтны, тӧвар соді, ньӧбасьысь соді. Ӧні кооператив лоис ыджыд нин, пӧшти быд крестьянин гижсис шленӧ, мынтіс пай. Найӧ пай вылӧ судзӧдісны трактор. Ӧні крестьяна сійӧ тракторнас ассьыныс мусӧ уджалӧны, ыджыд пасибӧ кайтӧны комсомолечьяслы выль ногӧн овны велӧдӧмысь.</p>
+<p>Ӧти сиктын вӧлі сэтшӧмтор. Восьтісны удждысян видз-му уджалан кооперация. Сійӧ сиктын крестьянаыс вӧлі велӧдчытӧмӧсь, сы понда председателяс удждысян кооперацияас бӧрйисны озыр купечӧс. Купечыд сьӧмтӧ кутіс удждыны сӧмын озыр йӧзлы. Гӧль йӧз пырджык тыртӧм киӧн, сьӧм налы вӧлі оз сет. Кватитчим да бӧрыннас со мый лои. Кымынкӧ крестьянин удждысьӧм сьӧм помысь озырмисны, овмӧснысӧ вынсьӧдісны да паськӧдісны да кутісны гӧль крестьянасӧ увтыртны, ас кипод улас босьтны да дзескӧдны.</p>
+<p>Комсомолечьяс тайӧ сиктас ёна збойӧсь детинаяс вӧліны. Найӧ ас костас шуисны кулакъясӧс велӧдыштны, медым пӧ кутасны тӧдны кодлы Сӧвет власьтыс видзӧ да лӧсьӧдӧ кооперациясӧ, налы али гӧль йӧзлы. Комсомолечьяс чукӧртісны гӧль йӧзӧс да корисны общӧй кооперативса собранньӧ вылӧ: тайӧ общӧй собранньӧ вылас унджыкнас бӧрйисны выль правленньӧ, выль уджалысьясӧс гӧль йӧз пиысь да комсомолеч пиысь. Озыр йӧзыд эськӧ ёна горзісны да, увгисны да, эз ло на ног, озыр йӧз письыд некодӧс эз бӧрйыны. Выль уджалысьясыд кутісны видлавны важ уджъястӧ да важ председательтӧ лёка уджалӧмсьыд судӧ сетісны. Ӧні удждысян кооперацияыд зэв бура уджалӧ, сьӧмтӧ сетӧны сӧмын нин ёна йӧрмӧм мортлы, гӧль мортлы.</p>
+<p>Та ногӧн кӧ — медпервойсӧ колӧ комсомолечыдлы висьтавлыны крестьяналы, мый бурсӧ кооперативыс сетӧ йӧзыслы, мыйла колӧ кооперативсӧ восьтыны, кыдз сэн уджсӧ нуны.</p>
+<p>Быд комсомолеч тӧдӧ, кутшӧм тӧвар колӧ сиктӧ крестьяналы, найӧ овмӧслы. Кооператив кӧ оз куж, колӧ налы висьтавны, индыны, туйдӧдны найӧс. Сы понда колӧ комсомолечлы гижсьыны лавкаса комитетӧ, сійӧ комитетсӧ бӧрйӧны пайщик пиысь. Комитет видзӧдӧ медым лавкаын вӧлі сӧмын колан тӧвар да бур тӧвар, медым ньӧбасьысьяскӧд бура сёрнитісны, вузасисны, медым гӧгӧр лавкаын вӧлі дзим-дзурк. Быд кооперативын нӧшта эм ревизионнӧй комиссия. Тайӧ комиссияын уджалысьяс видзӧдӧны, веськыда-ӧ гижӧны нигаясӧ, нуӧны тшӧт, оз-ӧ гусясьны, кыскавны, таргайтны.</p>
+</div>
+<div id="колӧны-бур-прикащикъяс-да-счетовод" class="section level3">
+<h3>Колӧны бур прикащикъяс да счетовод</h3>
+<p>Уна кооперативын уджалӧны прикащик пыдди важ купечьяс. Налӧн ӧткымынлӧн кольӧма на важ оланногыс. Татшӧм прикащикыд видзӧдӧ вестӧ, сьӧктатӧ чиркны. Пырас ньӧбасьны озыр крестьянин, сылы сетӧ медбур тӧварсӧ. Пырас лавкаӧ гӧль крестьянин — сыкӧд оз зэв и сёрнит, либӧ горзӧ, видчӧ, тӧвартӧ видзӧдӧ медомӧльсӧ сетны. Кооперативыд эськӧ абу частнӧй лавка. Лавкаад ӧні став крестьяниныс — пайщик, сэн кӧзяин.</p>
+<p>Прикащик да счетовод вӧчӧны сэн став уджсӧ. Омӧль прикащик понда мукӧд кооперативӧ крестьяналӧн сьӧлӧмыс оз кыскы пырныс, омӧль счетовод вермас став уджсӧ торкны. Комсомолечлы колӧ уджалігмоз велӧдны кооперативын вузасьӧм, кутшӧмджык тӧвар колӧ сиктӧ вайны, кутшӧм тӧвар бур да омӧль. Комсомоллы колӧ кооперативӧ сувтны прилавок сайӧ, сетны сӧветскӧй кооперативлы бур тӧлка, сӧвесьта гӧрд приказчикӧс да гӧрд счетоводӧс.</p>
+</div>
+<div id="кооперативнӧй-грамота" class="section level3">
+<h3>Кооперативнӧй грамота</h3>
+<p>Кооперативын уджалӧм кындзи комсомолечлы колӧ кооперативнӧй грамота. Сы понда кооператив бердӧ колӧ лӧсьӧдны кружок кооперативнӧй удж тӧдмавны, велӧдны. Тайӧ кружокас колӧ том йӧзӧс ӧтувтны. Кружокас уджсӧ медым нуас председатель, либӧ правленньӧысь кутшӧмкӧ шлен, либӧ кутшӧмкӧ мукӧд морт кооперативын уджалысь. Кружокын уджсӧ колӧ йитны кооперативса уджкӧд, сэн колӧ сёрнитны кооператив удж йылысь, устав йылысь, сідзжӧ и мукӧд тор йылысь тӧлкуйтны: мый шуис Ленин, кутшӧм удж сулалӧ кооператив водзын и м. сэтшӧм тор.</p>
+</div>
+</div>
+<div id="cite-as" class="section level2">
+<h2>Cite as</h2>
+<pre><code>@book{10024_67954,
+author={},
+year={1926},
+title={Комсомол да кооперация},
+url={http://fennougrica.kansalliskirjasto.fi/handle/10024/67954},
+note={Scanned in the National Library of Finland&#39;s Fenno-Ugrica project. Processed and proofread by FU-Lab. Selected and organized into Written Komi Corpus: Fenno-Ugrica collection by Niko Partanen.}
+}</code></pre>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

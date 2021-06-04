@@ -1,0 +1,16 @@
+#id {
+    position: relative;
+    margin-top: -50px;
+}
+
+
+:target {
+   background-color: #ffa;
+}
+
+:target::before {
+    content: '';
+    display: block;
+    height:      180px;
+    margin-top: -180px;
+}

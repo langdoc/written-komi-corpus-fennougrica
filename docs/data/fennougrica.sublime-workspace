@@ -1,0 +1,257 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data"
+	],
+	"file_history":
+	[
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87597.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87595.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87472.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87447.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87441.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87440.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87438.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87437.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87436.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87434.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87426.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87420.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87418.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87417.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87408.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87404.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87401.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87390.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87360.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87358.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87355.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87354.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87346.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87342.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87331.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87329.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87326.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87322.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87321.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87318.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87316.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67982.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67980.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67969.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67968.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67954.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67947.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67937.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67927.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67379.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67355.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67354.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67350.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67345.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67340.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67339.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67335.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67326.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67324.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67321.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67317.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67316.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67315.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67312.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67308.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67307.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67305.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67297.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67289.md",
+		"/Users/npartane/github/lameta-ikdp/README.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_67290.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87323.md",
+		"/Users/npartane/github/written-komi-corpus-fennougrica/data/10024_87443.md",
+		"/Users/npartane/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/npartane/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\n[^#].+[^.!?: ]\\n",
+			"\\. ",
+			"\\.",
+			"\\n\\n",
+			"\\n[^#].+[^.!?: ]\\n",
+			"\\n[^#].+[^.!?:]\\n",
+			"\\n[^#].+[^.!?]\\n",
+			"\\n.+[^.!?]\\n",
+			"\n \n",
+			"\\n",
+			"fula",
+			"Fu-l",
+			"небӧга##",
+			"небӧга",
+			"онлин",
+			"##",
+			"[^\\n]\\n",
+			"\\n",
+			"вӧр пом",
+			"вӧр по",
+			"\\n### ",
+			"БУМАГА ВӦЧӦМ СССР"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			".\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fennougrica.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
