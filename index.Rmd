@@ -1,0 +1,26 @@
+---
+title: "Fenno-Ugrica Corpus"
+---
+
+This is a corpus that contains materials published in the Fenno-Ugrica collection of the National Library of Finland. They have been proofread and transliterated primarily by FU-Lab, which has made them available also in the [Komi Online Library](http://komikyv.org/). Additionally there are parts proofread by Niko Partanen. The materials will be registered in Zenodo so that different versions can be cited and used in reproducible manner in scientific work.
+
+The goal is to eventually include various genres and text types that are present in Fenno-Ugrica collections. The figure below shows how the books are currently distributed by year.  
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+
+read_tsv("metadata.tsv", col_types = cols(
+  .default = col_character(),
+  id = col_double(),
+  date_issued = col_date(format = ""),
+  title_eng = col_logical(),
+  year = col_double(),
+  fulab_exists = col_logical()
+)) %>% select(author_cyr, year, title, categories_eng) %>%
+  ggplot(data = ., aes(x = year)) +
+  geom_bar()
+```
+
+These materials are considered to be in Public Domain, and can thereby be used in various ways. We aim, however, to attribute as accurately as possibly everyone who has contributed into this work. This includes both the original authors and those who have later worked with the materials. We also hope that the further derived works would be published with open licenses, but, naturally, in the case of Public Domain work there are no restrictions. 
+
+> For transfer of copyright to the ownership of the Russian Federation no legal requirements provide for the issue of certificate of the inheritance right. In accordance with Part 2 of Article 1283 of the Civil Code of the Russian Federation (“Transfer of Exclusive right to the Work by Inheritance”): “In cases indicated in Article 1151 of this Code the exclusive right to the work included in the structure of heritage is terminated, and the work transfers to public domain”. The transfer of the work to public domain means that such work by virtue of Article 1282 of the Civil Code of the Russian Federation may be used freely by any person without any consent or authorization and without payment of royalty fee. With that, the authorship, author’s name and the integrity of the work are retained. Thanks to the activity of the National Library Resource, it managed to documentarily prove the fact that the copyright to the Publications belongs to ownerless property (escheat), with regard to which the procedure of the use of works which fell into public domain is implemented. Certificate is available in [http://s1.doria.fi/ohje/fennougrica_licence_text.htm](http://s1.doria.fi/ohje/fennougrica_licence_text.htm)
