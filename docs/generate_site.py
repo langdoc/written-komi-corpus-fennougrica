@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import requests
-from bs4 import BeautifulSoup
+import re
 import pandas as pd
 from collections import Counter
 import csv
@@ -41,6 +41,83 @@ for book in books:
     except:
         
         print(f"Check {book['id']}")
+        
+prolatives = []
+ 
+filename = "komi-prolatives.tsv"
+  
+with open(filename, 'r') as meta_tsv:
+      
+    for line in csv.DictReader(meta_tsv, delimiter="\t"):
+        
+        dictionary = dict(line)
+        
+        prolatives.append(dictionary)
+
+for prolative in prolatives:
+    
+    hit = re.search(re.escape(prolative['form'].upper().replace('_', ' ')), prolative['sentence'])
+    
+    if hit:
+        
+        prolative['match_sentence'] = hit
+    
+    else:
+        
+        print(f"Cannot find {prolative['form']}")
+
+for book in books:
+    
+    matching_ids = []
+    
+    for prolative in prolatives:
+        
+        hit = re.search(re.escape(prolative['sentence'].lower()), book['text'].lower())
+        
+        if hit:
+            
+            prolative['match_text'] = hit
+            matching_ids.append(prolative)
+            
+    book['prolatives'] = matching_ids
+
+for book in books:
+    
+    if 'prolatives' in book:
+        
+        c = 0
+        
+        tagged_text = book['text']
+        
+        for prolative in book['prolatives']:
+            
+            prolative['position'] = prolative['match_text'].span()[0] + prolative['match_sentence'].span()[0]
+        
+        prolatives = sorted(book['prolatives'], key = lambda i: i['position'])
+
+        for prolative in prolatives:
+
+            s_start = prolative['match_text'].span()[0]
+            s_end = prolative['match_text'].span()[1]
+
+            sw_start = prolative['match_sentence'].span()[0]
+            sw_end = prolative['match_sentence'].span()[1]
+            
+            pre = tagged_text[0:s_start + sw_start + c]
+            post = tagged_text[s_start + sw_end + c:]
+
+            word = f"<tag id='{prolative['identifier']}'>{tagged_text[s_start + sw_start + c:s_start + sw_end + c]}</tag>"
+            
+            tagged_text = f"{pre}{word}{post}"
+            
+            c += 21
+            
+        book['tagged_text'] = tagged_text
+    
+    else:
+        
+        book['tagged_text'] = book['text']
+
 
 for book in books:
     
@@ -75,7 +152,7 @@ note={{Scanned in the National Library of Finland's Fenno-Ugrica project. Proces
     
     text = ''
 
-    for line in book['text'].split("\n"):
+    for line in book['tagged_text'].split("\n"):
         
         if line.isupper() and "#" not in line:
             
